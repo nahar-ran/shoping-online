@@ -1,0 +1,314 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #F0EDE5;
+}
+p.search {
+  position: absolute;
+  left: 21%;
+  top: 3%;
+}
+.loginF {
+  font-size: 200%;
+  font-family: '"Comic Sans MS", cursive, sans-serif';
+  position: relative;
+  left: 45%;
+  font-size: 100%;
+  height: 40%;
+  margin-top: 10%;
+}
+.loginF input {
+  margin-top: 1%;
+}
+.loginF button {
+  position: relative;
+  margin: 2% 0 0 2%;
+}
+.loginF span#invalidLogin {
+  font-size: 200%;
+  font-family: '"Comic Sans MS", cursive, sans-serif';
+  font-size: 90%;
+  position: relative;
+  top: 10%;
+  left: -0.5%;
+  color: red;
+}
+div#landingTemplate {
+  margin-top: 3%;
+  text-align: center;
+  font-size: 200%;
+  font-family: '"Comic Sans MS", cursive, sans-serif';
+}
+div#landingTemplate a {
+  margin-right: 1%;
+}
+.text {
+  font-size: 200%;
+  font-family: '"Comic Sans MS", cursive, sans-serif';
+}
+div#superMarketInfo {
+  position: relative;
+  margin-top: 13%;
+  left: 30%;
+  width: 40%;
+  text-align: center;
+  font-size: 200%;
+  font-family: '"Comic Sans MS", cursive, sans-serif';
+}
+div#header {
+  height: 10%;
+  background-color: #B4B7BA;
+}
+div#header #greeting {
+  font-size: 200%;
+  font-family: '"Comic Sans MS", cursive, sans-serif';
+  font-size: 150%;
+  position: relative;
+  top: 20%;
+  right: 5%;
+  float: right;
+}
+div#header button#logout {
+  float: right;
+  position: relative;
+  top: 25%;
+  right: 2%;
+}
+div#header img {
+  height: 7.5%;
+  width: 7.5%;
+  position: absolute;
+  top: 1%;
+}
+div#header button#startShoping {
+  position: absolute;
+  left: 22%;
+  top: 1%;
+  font-size: 200%;
+  font-family: '"Comic Sans MS", cursive, sans-serif';
+  color: black;
+}
+div#header h2 {
+  position: absolute;
+  left: 9%;
+  color: black;
+  top: 1%;
+  font-size: 200%;
+  font-family: '"Comic Sans MS", cursive, sans-serif';
+}
+div#sideCart,
+div#addEditProducts {
+  margin-top: 1%;
+  float: left;
+  width: 22%;
+  min-height: 100%;
+  background-color: #6F9FD8;
+}
+div#sideCart button#addNewProduct,
+div#addEditProducts button#addNewProduct {
+  background-color: #672E3B;
+  margin: 7% 0 0 5%;
+  color: black;
+}
+div#sideCart form ul#editProduct .inputLables,
+div#addEditProducts form ul#editProduct .inputLables,
+div#sideCart form ul#addItem .inputLables,
+div#addEditProducts form ul#addItem .inputLables {
+  font-size: 200%;
+  font-family: '"Comic Sans MS", cursive, sans-serif';
+  font-size: 110%;
+  margin-right: 20%;
+}
+div#sideCart form ul,
+div#addEditProducts form ul {
+  list-style-type: none;
+}
+div#sideCart form ul li,
+div#addEditProducts form ul li {
+  margin-bottom: 4%;
+  display: block;
+  width: 100%;
+  float: left;
+}
+div#sideCart form ul li .inputLables,
+div#addEditProducts form ul li .inputLables {
+  display: inline-block;
+  width: 20%;
+}
+div#sideCart form ul li input,
+div#addEditProducts form ul li input {
+  width: 70%;
+  display: inline-block;
+}
+div#sideCart ul#cartItems,
+div#addEditProducts ul#cartItems {
+  width: 150%;
+  list-style-type: none;
+}
+div#sideCart ul#cartItems li,
+div#addEditProducts ul#cartItems li {
+  font-size: 200%;
+  font-family: '"Comic Sans MS", cursive, sans-serif';
+  font-size: 120%;
+  max-width: 70%;
+  height: 15%;
+  margin-right: 50%;
+  margin-top: 5%;
+}
+div#sideCart ul#cartItems li button,
+div#addEditProducts ul#cartItems li button {
+  width: 40%;
+  display: block;
+}
+div#sideCart span#totalPrice,
+div#addEditProducts span#totalPrice {
+  font-size: 200%;
+  font-family: '"Comic Sans MS", cursive, sans-serif';
+  font-size: 130%;
+  margin-left: 16%;
+}
+div#sideCart button#order,
+div#addEditProducts button#order,
+div#sideCart button#removeAllProducts,
+div#addEditProducts button#removeAllProducts {
+  margin: 5% 0 0 10%;
+  width: 80%;
+}
+div#mainView {
+  width: 75%;
+  height: 100%;
+  display: inline-block;
+}
+div#mainView div#categories {
+  background-color: #ECDB54;
+  margin-left: 1.5%;
+  margin-top: 2%;
+  float: left;
+  width: 100%;
+  border-radius: 10%;
+}
+div#mainView div#categories ul#categories {
+  width: 90%;
+  height: 4.7%;
+  text-align: center;
+  list-style-type: none;
+}
+div#mainView div#categories ul#categories li {
+  font-size: 130%;
+  margin-right: 2%;
+  display: inline-block;
+  width: 23%;
+}
+div#mainView div#categories ul#categories li:hover,
+div#mainView div#categories ul#categories li.active {
+  text-decoration: underline;
+}
+div#mainView div#products {
+  width: 100%;
+  margin-top: 10%;
+}
+div#mainView div#products ul#selectedProducts {
+  float: left;
+  list-style-type: none;
+  margin-right: 2%;
+  margin-top: -5%;
+  width: 100%;
+}
+div#mainView div#products ul#selectedProducts li {
+  display: inline-block;
+  margin: 1.5% 0 0 5.5%;
+  width: 17.5%;
+  padding: 2%;
+  height: 35%;
+  position: relative;
+}
+div#mainView div#products ul#selectedProducts li .glyphicon {
+  font-size: 150%;
+}
+div#mainView div#products ul#selectedProducts li button {
+  position: relative;
+  top: 90%;
+  right: 10%;
+}
+div#mainView div#products ul#selectedProducts li img {
+  position: absolute;
+  top: 25%;
+  right: 40%;
+  width: 54%;
+  height: 36%;
+}
+div#mainView div#products ul#selectedProducts li span.name {
+  display: block;
+  position: absolute;
+  right: 19.5%;
+  width: 78.5%;
+  top: 62%;
+  font-size: 200%;
+  font-family: '"Comic Sans MS", cursive, sans-serif';
+  font-size: 84%;
+}
+div#mainView div#products ul#selectedProducts li span.price {
+  display: block;
+  position: absolute;
+  right: 58.5%;
+  top: 77%;
+  font-size: 200%;
+  font-family: '"Comic Sans MS", cursive, sans-serif';
+  font-size: 74%;
+}
+.cartModal {
+  display: none;
+  z-index: 1000;
+  position: relative;
+  bottom: 70%;
+  font-size: 200%;
+  font-family: '"Comic Sans MS", cursive, sans-serif';
+  font-size: 130%;
+  background-color: #fefefe;
+  margin: -40% 0 0 40%;
+  padding: 30;
+  border: 1px solid #888;
+  width: 40%;
+  height: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cartModal span#invalidQuantity {
+  color: red;
+  font-size: 90%;
+}
+#receipt {
+  font-size: 200%;
+  font-family: '"Comic Sans MS", cursive, sans-serif';
+  font-size: 100%;
+  width: 45%;
+  min-height: 100%;
+  position: relative;
+  margin-top: 10%;
+  display: inline-block;
+}
+#receipt ul {
+  text-align: center;
+  list-style-type: none;
+  margin-right: 4%;
+}
+#receipt span#totalPrice {
+  font-size: 200%;
+  font-family: '"Comic Sans MS", cursive, sans-serif';
+  position: relative;
+  left: 40%;
+  margin-top: 6%;
+}
+#orderForm {
+  width: 45%;
+  height: 100%;
+  float: right;
+  padding-left: 15%;
+  padding-top: 10%;
+}
+#orderForm input {
+  display: block;
+  margin-top: 3%;
+}
+.yellowBackground {
+  background-color: yellow;
+}

@@ -1,0 +1,58 @@
+.text {
+  font-size: 150%;
+  font-family: '"Comic Sans MS", cursive, sans-serif';
+}
+#container {
+  text-align: center;
+  position: relative;
+}
+#container form ul {
+  position: relative;
+  margin-top: 4%;
+  list-style-type: none;
+}
+#container form ul li {
+  position: relative;
+  right: 5%;
+  margin-top: 2%;
+}
+#container form ul li .errorSpans {
+  position: absolute;
+  margin-left: 0.5%;
+}
+#container form ul li#email {
+  position: relative;
+  right: 6%;
+}
+#container form ul li#id {
+  position: relative;
+}
+#container form ul li#password {
+  position: relative;
+  right: 7.5%;
+}
+#container form ul li#confirmPassword {
+  position: relative;
+  right: 10.5%;
+}
+#container form ul li#famillyName {
+  position: absolute;
+  left: -2.5%;
+}
+#container form input[type='submit'] {
+  position: relative;
+  right: 1%;
+  margin-top: 5.5%;
+}
+#container form .inputLables {
+  color: black;
+  font-size: 150%;
+  font-family: '"Comic Sans MS", cursive, sans-serif';
+}
+#container form span,
+#container form .ng-invalid {
+  color: red;
+}
+#container form input.ng-invalid {
+  color: black;
+}

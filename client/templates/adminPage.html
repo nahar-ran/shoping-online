@@ -1,0 +1,33 @@
+
+<div id = 'addEditProducts'>
+
+    <add-item>
+
+    </add-item>
+
+    <edit-item edit-product = 'edit' details = 'editData'>
+
+    </edit-item>
+    
+   
+   
+</div>
+
+
+<div id = "mainView">
+    
+    <div id = "categories">
+        <ul id= 'categories'>
+            <li ng-click='spreadCategory(item)' id = {{item.name}} ng-repeat = "item in categories">
+                {{item.name}}
+            </li>
+            
+        </ul>
+    </div>  
+    
+    <div products-dir id = 'products'>
+     
+    </div>
+
+</div>
+    

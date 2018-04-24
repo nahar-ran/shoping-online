@@ -1,0 +1,53 @@
+
+
+<p class = 'search'>
+    
+    <span>
+        search product
+    </span>
+    
+    <input ng-model = "searchReciptVal" ng-change = "searchRecipt(searchReciptVal)" type = 'text' id = "searchRecipt" placeholder="search in recipt" />
+</p>    
+
+       
+<div id = "receipt">
+
+    <ul>
+        <li ng-repeat="item in curCart">
+            <receipt-item price = {{item.price}} quantity = {{item.quantity}}  name = {{item.name}}>
+            </receipt-item>
+        </li>
+    </ul>
+
+    <span id = 'totalPrice'>
+        total price: {{totalPrice | currency:'&#8362;'}}
+    </span>
+
+
+</div>
+
+<form id = "orderForm" name= 'orderForm' ng-submit = 'submitOrder(order)'>
+
+    <input get-cur ng-model = 'order.street' custom-lable name = 'street' type = "text" id ='street' />
+    
+    <input get-cur ng-model = 'order.city' custom-lable name = 'city' type = "city" id = "city" />
+
+    <input ng-model = 'order.shippingDate' custom-lable name = 'shipping date' type = "date" id ='shipping-date' />
+    
+    <span ng-show = '!dateValid'>
+            
+        this date has too many orders scheduled
+    
+    </span>
+    
+    <input ng-model = 'order.creditCard' ng-pattern = "/^\d{9}$/" custom-lable name = 'creditCard' type = "text" id = "creditCard" />
+
+    <span ng-show= "orderForm.creditCard.$error.pattern">
+    
+        credit card should be 9 numbers only
+    
+    </span>
+
+    <input class = 'btn btn-primary' type = 'submit' value = 'order' />
+            
+</form>

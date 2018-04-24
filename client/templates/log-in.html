@@ -1,0 +1,26 @@
+
+
+<div class = 'loginF'>
+       
+    <input placeholder="id" ng-model = 'id' type = 'text'/>
+    
+    </br>
+    
+    <input ng-model = 'pass' placeholder="password" type = 'password'/> 
+    
+    </br>       
+    
+    <button class = 'btn btn-primary' ng-click = "sendInfo(id,pass)">
+        log in
+    </button>
+        
+    </br>
+            
+    <span id = 'invalidLogin' ng-show="verifiedUser===false">
+                
+        your username or password dont exist
+            
+    </span>
+        
+</div>
+

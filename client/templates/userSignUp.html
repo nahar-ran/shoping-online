@@ -1,0 +1,48 @@
+<div id = 'container'>
+    <form ng-submit = 'form1Func(signUpInfo,signUp1)' name = 'signUp1'>
+        <ul id = "inputs1">
+            <li class = "inputsLi" id= "id">
+                <input custom-lable ng-model = 'signUpInfo.id' ng-pattern="/^\d{9}$/"  name = 'id' type = 'text' ng-minlength="9" ng-required="true" check-available target='usedId'/>
+                
+                <custom-error err-massage='errs.id.required' condition = "signUp1.id.$dirty&&signUp1.id.$error.required"></custom-error>
+                <custom-error err-massage='errs.id.minlength' condition = "signUp1.id.$dirty&&signUp1.id.$error.minlength"></custom-error>
+                <custom-error err-massage='errs.id.unavailable' condition = "signUp1.id.$dirty&&signUp1.id.$error.unavailable"></custom-error>
+                <custom-error err-massage='errs.id.pattern' condition ="!signUp1.$error.minlength&&signUp1.id.$dirty&&signUp1.id.$error.pattern"></custom-error>
+
+
+            </li>
+   
+
+            <li class = "inputsLi" id= "email">
+
+                <input custom-lable ng-pattern = "/([a-zA-Z])\d*@{1}([a-zA-Z]){2,}\.([a-zA-Z]){2,4}$/" ng-model = 'signUpInfo.email'  name = 'email' type = 'text' ng-required="true" />
+                <custom-error err-massage='errs.email.required' condition = "signUp1.email.$dirty&&signUp1.email.$error.required"></custom-error>
+                <custom-error err-massage='errs.email.invalid' condition = "signUp1.email.$dirty&&signUp1.email.$invalid&&!signUp1.email.$error.required"></custom-error>
+
+            </li>
+
+            <li class = "inputsLi" id= "password">
+
+                <input custom-lable ng-model = 'signUpInfo.password'  name = 'password' ng-minlength="5" ng-pattern="/(?=.*?[a-z])(?=.*?[0-9])/" type = 'password' ng-required="true" />
+                <custom-error err-massage='errs.password.minlength' condition = "signUp1.password.$error.minlength"></custom-error>
+                <custom-error err-massage='errs.password.pattern' condition = "signUp1.password.$error.pattern&&!signUp1.password.$error.minlength"></custom-error>
+                <custom-error err-massage='errs.password.required' condition = "signUp1.password.$error.required"></custom-error>
+            </li>
+
+
+
+            <li class = "inputsLi" id= "confirmPassword">
+
+                <input custom-lable value = "value" ng-model = 'passwordConfirm' required type = "password" name="confirmPassword" password-confirm target = "signUpInfo.password"/>
+                <custom-error err-massage='errs.confirmPassword.required' condition = "signUp1.confirmPassword.$error.required"></custom-error>
+                <custom-error err-massage='errs.confirmPassword.match' condition = "signUp1.confirmPassword.$error.match&&!signUp1.confirmPassword.$error.required"></custom-error>
+            </li>
+   
+
+
+        </ul>
+        
+        <input class = 'btn btn-link' type = "submit" value = "next" />
+
+    </form> 
+</div>
